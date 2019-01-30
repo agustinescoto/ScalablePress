@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coin Flip</title>
+
+
+</head>
+
+<body>
+    <p id="result"></p>
+
+    <script>
+        function flip() {
+            return Math.random() >= 0.5;
+        }
+        //console.log(Math.floor(flip()));
+
+        function randomNumber(n) {
+
+            var numRand = Math.floor(flip(n)) * 1000000;
+            /*
+                Your implementation, using the flip() function
+            */
+
+            // Returns a number between [0, n)
+            //return document.getElementById("result").innerHTML = numRand;
+            if (numRand > 1000000) {
+                return false;
+            }
+            return numRand;
+
+        }
+        console.log(randomNumber(500));
+    </script>
+</body>
+
+</html>

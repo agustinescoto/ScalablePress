@@ -1,0 +1,25 @@
+p#timeout {
+    text-align: center;
+    font-size: 30px;
+}
+
+div#time {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+div.calendar {
+    width: 20%;
+    display: inline-block;
+    border: solid 1px #dadada;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    /* Safari  */
+    -moz-border-radius: 15px;
+    /* Firefox */
+}
+
+p.phrase {
+    color: #dadada;
+}
